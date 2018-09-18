@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>League of Legends Wiki</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="author" content="Bianca Ferreira da Frota Barreto">
+    <link href="assets/stylesheets/global.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  </head>
+
+  <body>
+    <nav class="nav">
+      <a class="nav-link active" href="#">League of Legends Wiki</a>
+    </nav>
+    
+    <main class="main-content container">
+      <div class="form">
+        <p>Search for a League of Legends champion!!</p>
+        <input id="js_find_input" type="text" class="form-control" placeholder="Input champion name" aria-label="Input champion name">
+        <button id="js_find_button" type="button" class="btn btn-primary">Find my champion</button>
+      </div>
+
+      <div id="js_found_champion" class="form is-hidden">
+        <p id="js_name">Name</p>
+        <p id="js_dcp">Description</p>
+      </div>
+    </main>
+
+    <footer></footer>
+    <script type="text/javascript"></script>
+  </body>
+</html>
