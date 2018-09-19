@@ -67,5 +67,5 @@ input.form-control:focus {
 	box-shadow: 0 0 0 0.2rem rgba(19, 96, 77, .25);
 }
 .is-hidden {
-	display: none;
+	display: none !important; 
 }
