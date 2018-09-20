@@ -1,11 +1,4 @@
 
-
-
-
-
-
-
-
 $('document').ready(function(){
 	$button = $('#js_find_button');
 	$input = $('#js_find_input');
@@ -21,7 +14,6 @@ $('document').ready(function(){
 		  context: document.body
 		}).then(function(data) {
 			JSON.parse(data).forEach(function(champion){
-				// console.log(champion);
 				
 				if(champion.name == $input.val()){
 					alert("I've found " + champion.name + "!");
@@ -30,14 +22,11 @@ $('document').ready(function(){
 					$championDcp.text(champion.description);
 				}
 			});
-		  // console.log("Primeiro");
 		}).catch(function(error){
 			console.log(error);
 			alert("Esse lnk não existe");
 		});
-		  // console.log("Segundo");
 	});
-
 });
 
 
